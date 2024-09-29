@@ -1,0 +1,187 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-footer: 65px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+
+}
+
+.header {
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32b9cd;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #e3b062;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+.navbar {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #e3b062;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 800;
+}
+
+.banner {
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    background-size: cover;
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .container p {
+    width: 50%;
+    font-size: 36px;
+}
+
+.banner .container span {
+    font-weight: 800;
+}
+
+.social {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .container .boxes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box img {
+    width: 170px;
+}
+
+.box h4 {
+    color: rgb(218, 65, 90);
+}
+
+.box p {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #32b9cd;
+    height: var(--tamanho-footer);
+    color: white;
+    display: flex;
+    font-size: 15px;
+
+}
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.version {
+    font-size: 12px;
+}
+
+.login{
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    height: var(--tamanho-banner);
+    background-size: cover;
+    display: flex;
+}
+
+.login .container{
+    background-color: rgb(235, 222, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    border-radius: 12px;
+}
+
+.container h2{
+    font-size: 30px;
+    color: rgb(218, 65, 90);
+}
+
+.formulario {
+    color: rgb(218, 65, 90);
+    font-weight: 600;
+}
+
+.formulario .campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input{
+    padding: 10px;
+    border: solid 2px #32b9cd;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+button{
+    color: white;
+    background-color: rgb(218, 65, 90);
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100px;
+    font-weight: 700;
+}
