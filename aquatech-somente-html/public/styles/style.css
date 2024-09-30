@@ -138,18 +138,28 @@ body {
     background-size: cover;
     display: flex;
 }
-
-.login .container{
+.container{
+       display: flex;
+       justify-content: center;
+}
+.login .card{
     background-color: rgb(235, 222, 222);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
-    width: 50%;
+    flex-direction: column;
     border-radius: 12px;
 }
 
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 .container h2{
     font-size: 30px;
     color: rgb(218, 65, 90);
