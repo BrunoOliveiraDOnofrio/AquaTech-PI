@@ -12,7 +12,7 @@ body {
 :root {
     --tamanho-header: 80px;
     --tamanho-footer: 65px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(55vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 
 }
@@ -22,7 +22,9 @@ body {
     border-bottom: 2px solid #32b9cd;
 }
 
-.container {
+.social .container,
+.header .container,
+.footer .container {
     display: flex;
     width: 80%;
     margin: auto;
@@ -89,16 +91,22 @@ body {
 
 .social .container .boxes{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
 }
 
 .box {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.valores {
+    display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .box img {
