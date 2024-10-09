@@ -24,7 +24,6 @@ body {
 
 .social .container,
 .header .container,
-.footer .container,
 .login .container {
     display: flex;
     width: 80%;
@@ -62,7 +61,7 @@ body {
 }
 
 .banner {
-    height: var(--tamanho-banner - 55vh);
+    height: 30vh;
     color: white;
     background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
     background-size: cover;
@@ -125,16 +124,17 @@ body {
 
 .footer {
     background-color: #32b9cd;
-    height: var(--tamanho-footer);
+    height: 100px;
     color: white;
     display: flex;
     font-size: 15px;
-
+    padding: 15px;
 }
 
 .footer .container {
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin: auto;
+    
 }
 
 .version {
